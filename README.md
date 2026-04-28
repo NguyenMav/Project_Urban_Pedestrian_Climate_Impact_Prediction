@@ -105,19 +105,19 @@ The datasets used in this project are the "Pedestrian Counting System (counts pe
 
 ## 1. Importing The Libraries
 
-This section is to show what libraries were used for this use case, with each imported library supporting a specific part of the pipeline. These libraries are necessary for doing data handling, time-series analysis, visualisation, feature engineering, optimisation, and deep learning. These were added at the beginning to ensure the workflow is organised. A random seed was set with a student ID to allow reproducibility of the outputs in this notebook.
+This section is to show what libraries were used for this use case, with each imported library supporting a specific part of the pipeline. These libraries are necessary for doing data handling, time-series analysis, visualisation, feature engineering, optimisation, and deep learning (1, 2, 3, 4, 5). These were added at the beginning to ensure the workflow is organised (6). A random seed was set with a student ID to allow reproducibility of the outputs in this notebook (7).
 
 ## 2. Importing The Datasets
 
-This section is necessary for importing multiple public datasets from the City of Melbourne, before any cleaning, merging and modelling in later stages can happen. These datasets will be accessed through the City of Melbourne Open Data API v2.1, to allow the notebook to be directly used upon download.
+This section is necessary for importing multiple public datasets from the City of Melbourne, before any cleaning, merging and modelling in later stages can happen. These datasets will be accessed through the City of Melbourne Open Data API v2.1, to allow the notebook to be directly used upon download (8).
 
-By using a shared BASE_URL and a dictionary of dataset identifiers, this allows for removing and adding datasets more easily. The get_csv_url() function is especially useful because it standardises the dataset access method and allows the same logic to be reused across all three datasets. The ROW_LIMIT parameter was added to allow experimentation on smaller samples before scaling to the full dataset. Lastly, the datasets are accessed through the Melbourne Open Data API v2.1, and no visible API key is exposed in the code.
+By using a shared BASE_URL and a dictionary of dataset identifiers, this allows for removing and adding datasets more easily (8, 9, 10, 11). The get_csv_url() function is especially useful because it standardises the dataset access method and allows the same logic to be reused across all three datasets (8). The ROW_LIMIT parameter was added to allow experimentation on smaller samples before scaling to the full dataset (8). Lastly, the datasets are accessed through the Melbourne Open Data API v2.1, and no visible API key is exposed in the code (8).
 
 ### 2.1 Pedestrian Counting System - Sensor Locations
 
 **Justification**
 
-This dataset was included to provide contextual information about the physical pedestrian counting network, even though it wasn't used in the later steps for modelling. The sensor metadata helps explain where the mobility data originates from and what the coverage of the system looks like.
+This dataset was included to provide contextual information about the physical pedestrian counting network, even though it wasn't used in the later steps for modelling. The sensor metadata helps explain where the mobility data originates from and what the coverage of the system looks like (9).
 
 **Output Explanation**
 
@@ -136,7 +136,7 @@ This dataset was included to provide contextual information about the physical p
 
 **Justification**
 
-This is the target dataset for the use case because the final prediction task is to forecast pedestrian demand. The pedestrian dataset contains the observed mobility outcome that the model aims to learn.
+This is the target dataset for the use case because the final prediction task is to forecast pedestrian demand. The pedestrian dataset contains the observed mobility outcome that the model aims to learn (10).
 
 **Output Explanation**
 
@@ -153,7 +153,7 @@ This is the target dataset for the use case because the final prediction task is
 
 **Justification**
 
-This dataset provides the microclimate data that the use case requires to understand how climate conditions affect urban pedestrian movement, more specifically, the input features. It basically provides the explanatory environmental variables to connect weather conditions to mobility demand. 
+This dataset provides the microclimate data that the use case requires to understand how climate conditions affect urban pedestrian movement, more specifically, the input features. It basically provides the explanatory environmental variables to connect weather conditions to mobility demand (11).
 
 **Output Explanation**
 
@@ -171,13 +171,13 @@ This dataset provides the microclimate data that the use case requires to unders
 
 ## 3. Initial Inspection Of The Datasets
 
-This section is necessary to understand the size, structure, completeness and formatting of public datasets since they often differ. Public datasets can have different structures, missing values, data types, date formats, and identifier systems, so checking them early helps identify potential issues in the workflow. Before trying to clean and merge the datasets, understanding what each of the datasets contains and how they can be combined is important.
+This section is necessary to understand the size, structure, completeness and formatting of public datasets since they often differ. Public datasets can have different structures, missing values, data types, date formats, and identifier systems, so checking them early helps identify potential issues in the workflow (12). Before trying to clean and merge the datasets, understanding what each of the datasets contains and how they can be combined is important (12).
 
 ### 3.1 Checking Number Of Rows/Columns
 
 **Justification**
 
-Checking the shape is important because it shows the scale and complexity of each dataset. This helps determine memory demands, cleaning strategy, and whether the data volume is sufficient for later modelling. 
+Checking the shape is important because it shows the scale and complexity of each dataset. This helps determine memory demands, cleaning strategy, and whether the data volume is sufficient for later modelling (13).
 
 **Output Explanation**
 
@@ -187,7 +187,7 @@ From these results, the pedestrian and microclimate datasets are large enough fo
 
 **Justification**
 
-This step is to verify what information is actually available in each dataset, and whether there are meaningful fields for later joining, cleaning, and modelling. Knowing the columns early prevents accidentally removing important variables or keeping irrelevant variables.
+This step is to verify what information is actually available in each dataset, and whether there are meaningful fields for later joining, cleaning, and modelling. Knowing the columns early prevents accidentally removing important variables or keeping irrelevant variables (14).
 
 **Output Explanation**
 
@@ -197,7 +197,7 @@ From the output, the column names confirm that location_id is shared between the
 
 **Justification**
 
-Datatype checking is essential because many later operations depend on correct types to proceed. Steps like date parsing, numeric aggregation, interpolation, rolling windows, and model preparation can all fail or behave incorrectly if types are wrong.
+Datatype checking is essential because many later operations depend on correct types to proceed. Steps like date parsing, numeric aggregation, interpolation, rolling windows, and model preparation can all fail or behave incorrectly if types are wrong (15).
 
 **Output Explanation**
 
@@ -207,7 +207,7 @@ From the outputs, the pedestrian sensing_date, sensor installation_date, and mic
 
 **Justification**
 
-Using .info() gives a more complete structural summary of the datasets, which shows non-null counts, memory usage, and dtype balance. But this step will focus more on the memory that will be used up in the RAM, to decide what sample size would be ideal for experimentation before scaling to the full dataset size, or opt for a platform like Google Colab to handle more heavy usage.
+Using .info() gives a more complete structural summary of the datasets, which shows non-null counts, memory usage, and dtype balance. But this step will focus more on the memory that will be used up in the RAM, to decide what sample size would be ideal for experimentation before scaling to the full dataset size, or opt for a platform like Google Colab to handle more heavy usage (16).
 
 **Output Explanation**
 
@@ -217,7 +217,7 @@ From the outputs, the pedestrian dataset takes up the most memory, followed by t
 
 **Justification**
 
-Checking for missing values is important, since it affects the cleaning strategy, feature selection, and merge quality. This is especially important because missing sensor readings can break hourly continuity for the modelling later.
+Checking for missing values is important, since it affects the cleaning strategy, feature selection, and merge quality. This is especially important because missing sensor readings can break hourly continuity for the modelling later (17).
 
 **Output Explanation**
 
@@ -227,7 +227,7 @@ From the outputs, the pedestrian counts dataset has no missing values at all. Th
 
 **Justification**
 
-Checking the summary statistics is an easy way to provide some early insights into the datasets, like central tendency and spread. 
+Checking the summary statistics is an easy way to provide some early insights into the datasets, like central tendency and spread (18).
 
 **Output Explanation**
 
@@ -237,7 +237,7 @@ From the sensor coordinates with the mean latitude and longitude, the Melbourne 
 
 **Justification**
 
-Checking the date format is important because a time-based merge depends on all datasets sharing a compatible datetime structure, and public datasets often use different date formats and timezone conventions. This is important because any mismatch in date or time formatting can prevent the datasets from merging correctly later.
+Checking the date format is important because a time-based merge depends on all datasets sharing a compatible datetime structure, and public datasets often use different date formats and timezone conventions. This is important because any mismatch in date or time formatting can prevent the datasets from merging correctly later (19).
 
 **Output Explanation**
 
@@ -247,7 +247,7 @@ The pedestrian dataset stores dates and hours separately. Whereas the microclima
 
 **Justification**
 
-This was an additional step for checking the unique identifiers to see if the datasets have any chance of being joined directly by ID or whether another strategy, like a datetime merge, is best. And since the project uses multiple public datasets, checking the unique IDs also helps confirm whether the pedestrian sensors and microclimate sensors use the same location system or separate systems.
+This was an additional step for checking the unique identifiers to see if the datasets have any chance of being joined directly by ID or whether another strategy, like a datetime merge, is best. And since the project uses multiple public datasets, checking the unique IDs also helps confirm whether the pedestrian sensors and microclimate sensors use the same location system or separate systems (20).
 
 **Output Explanation**
 
@@ -255,13 +255,13 @@ From the outputs, the sensor locations dataset contains 137 unique location_id v
 
 ## 4. Data Cleaning
 
-This is the section for data cleaning, since raw data are rarely ready to be used as it is, so cleaning processes are necessary to address duplicates, missing values, inconsistencies, syntax errors, irrelevant data and structural errors. And since this data pipeline uses the API for dataset access, this means that the datasets are being updated in real-time, so ensuring any errors get addressed in the pipeline ensures the data remains accurate, secure and accessible at every stage of its lifecycle. And that the prediction will also be accurate.
+This is the section for data cleaning, since raw data are rarely ready to be used as it is, so cleaning processes are necessary to address duplicates, missing values, inconsistencies, syntax errors, irrelevant data and structural errors (21, 22). And since this data pipeline uses the API for dataset access, this means that the datasets are being updated in real-time, so ensuring any errors get addressed in the pipeline ensures the data remains accurate, secure and accessible at every stage of its lifecycle (21). And that the prediction will also be accurate (22).
 
 ### 4.1 Removing Irrelevant Columns
 
 **Justification**
 
-Selecting relevant variables and removing the irrelevant ones are necessary because not every feature is useful for the prediction modelling. Keeping unnecessary columns can make the workflow harder to manage, increase memory usage, and create confusion in later steps.
+Selecting relevant variables and removing the irrelevant ones are necessary because not every feature is useful for the prediction modelling. Keeping unnecessary columns can make the workflow harder to manage, increase memory usage, and create confusion in later steps (23, 24).
 
 **Output Explanation**
 
@@ -271,7 +271,7 @@ In this step, the sensor dataset is reduced to six useful metadata columns, even
 
 **Justification**
 
-This step involves dealing with missing values by removing the rows they're in. This is because missing values in explanatory variables can cause problems when doing aggregation, interpolation, and modelling later. This is especially important for the microclimate dataset, since missing climate readings could affect the quality of the explanatory variables.
+This step involves dealing with missing values by removing the rows they're in. This is because missing values in explanatory variables can cause problems when doing aggregation, interpolation, and modelling later, leading to bias results (25). This is especially important for the microclimate dataset, since missing climate readings could affect the quality of the explanatory variables.
 
 **Output Explanation**
 
@@ -283,7 +283,7 @@ By using dropna(), the microclimate dataset lost a number of data points with mi
 
 **Justification**
 
-Ensuring the datetime formatting matches between the different datasets is important because the modelling is hourly, and the datasets need to be able to merge based on a common point. Skipping this step would mean that the datasets cannot be merged into one table.
+Ensuring the datetime formatting matches between the different datasets is important because the modelling is hourly, and the datasets need to be able to merge based on a common point for perform chronological analysis across different data sources (26, 27). Skipping this step would mean that the datasets cannot be merged into one table.
 
 **Output Explanation**
 
@@ -293,7 +293,7 @@ The pedestrian dataset is converted from separate sensing_date and hourday field
 
 **Justification**
 
-This step involves aggregation because the use case models city-level pedestrian demand rather than individual sensor-level behaviour. Since the pedestrian and microclimate datasets both contain multiple records within the same hour. This also ensures that both the pedestrian and the microclimate data share the same hourly rows without duplicates for later merging.
+This step involves aggregation because the use case models city-level pedestrian demand rather than individual sensor-level behaviour. Since the pedestrian and microclimate datasets both contain multiple records within the same hour. This also ensures that both the pedestrian and the microclimate data share the same hourly rows without duplicates for later merging, reducing the total data volume (28).
 
 **Output Explanation**
 
@@ -303,7 +303,7 @@ The aggregation involves the pedestrian counts being summed across sensors to pr
 
 **Justification**
 
-This step will merge the datasets together, ensuring the target variable, pedestrian count, is connected to the explanatory climate variables. The datetime_hour variable on both the pedestrian dataset and the microclimate dataset was inner-joined to merge into one dataset, meaning only the overlapping rows with the same values were merged. Which means every row has both pedestrian and climate information.
+This step will merge the datasets together, ensuring the target variable, pedestrian count, is connected to the explanatory climate variables. The datetime_hour variable on both the pedestrian dataset and the microclimate dataset was inner-joined to merge into one dataset, meaning only the overlapping rows with the same values were merged (29). Which means every row has both pedestrian and climate information, hence, a unified format ready for analysis (30).
 
 **Output Explanation**
 
@@ -311,13 +311,13 @@ A quick check of the merged dataset shows that the pedestrian counts and climate
 
 ## 5. Data Validation
 
-Doing data validation is important because a merged dataset that was cleaned may still be unsuitable for the task of this use case, possibly due to timestamps being duplicated, out of order, or some rows in the chronological datetime are missing. The time-series model tends to assume a consistent temporal structure with no sudden breaks, so this step in the pipeline checks that everything is complete.
+Doing data validation is important because a merged dataset that was cleaned may still be unsuitable for the task of this use case, possibly due to timestamps being duplicated, out of order, or some rows in the chronological datetime are missing. The time-series model tends to assume a consistent temporal structure with no sudden breaks, so this step in the pipeline checks that everything is complete (31).
 
 ### 5.1 Validating Time Series Dataset
 
 **Justification**
 
-Checking for duplicates or missing timestamps, since they can affect the lag features, rolling features and any sequence-based deep learning models that this use case may use. This is to ensure that there is a strictly ordered sequence of evenly spaced time points.
+Checking for duplicates or missing timestamps, since they can affect the lag features, rolling features and any sequence-based deep learning models that this use case may use. This is to ensure that there is a strictly ordered sequence of evenly spaced time points (32).
 
 **Output Explanation**
 
@@ -327,7 +327,7 @@ From the outputs, there are no duplicates in the datetime_hour values, which mea
 
 **Justification**
 
-Ensuring the missing timestamps are filled in is necessary for a complete hourly sequence in the dataset, and missing them can create issues when performing feature engineering later. Missing hours can cause problems when creating lag features, rolling averages, and LSTM input sequences, since these methods rely on consistent time gaps between rows.
+Ensuring the missing timestamps are filled in is necessary for a complete hourly sequence in the dataset, and missing them can create issues when performing feature engineering later. Missing hours can cause problems when creating lag features, rolling averages, and LSTM input sequences, since these methods rely on consistent time gaps between rows (32, 33).
 
 **Output Explanation**
 
@@ -335,13 +335,13 @@ This step involves reindexing to the full hourly range so that all the missing t
 
 ## 6. Exploratory Data Analysis
 
-The exploratory data analysis section was performed on the merged dataset to observe any interpretable patterns and get a rough understanding of how the dataset looks and feels before building a model. It's important to get a sense of how pedestrian demand changes over time and how it relates to the climate conditions.
+The exploratory data analysis section was performed on the merged dataset to observe any interpretable patterns and get a rough understanding of how the dataset looks and feels before building a model. It's important to get a sense of how pedestrian demand changes over time and how it relates to the climate conditions (34).
 
 ### 6.1 Pedestrian Count Over Time (Hourly)
 
 **Justification**
 
-Plotting the hourly pedestrian count is for a quick look at the target variable changes over time, to check if the time series data is random or if there are any patterns that may need to be taken into consideration for later steps.
+Plotting the hourly pedestrian count is for a quick look at the target variable changes over time, to check if the time series data is random or if there are any patterns that may need to be taken into consideration for later steps (35, 36).
 
 **Output Explanation**
 
@@ -351,7 +351,7 @@ From the plot, there appear to be large fluctuations across the full time range 
 
 **Justification**
 
-The day-of-week summary was checked to see if there may also be other variables like work patterns, shopping activities, or weekend behaviours that might have influenced the pedestrian demand. Also checks whether the day of the week should be considered an important time-based feature for later modelling.
+The day-of-week summary was checked to see if there may also be other variables like work patterns, shopping activities, or weekend behaviours that might have influenced the pedestrian demand. Also checks whether the day of the week should be considered an important time-based feature for later modelling (35, 37).
 
 **Output Explanation**
 
@@ -361,7 +361,7 @@ From the plot, it does seem like the weekdays tend to be relatively high along w
 
 **Justification**
 
-Checking for distribution to see whether it's symmetric, skewed, or multi-modal. This is useful because skewed variables, extreme values, or unusual distributions can influence how the model learns from the data.
+Checking for distribution to see whether it's symmetric, skewed, or multi-modal. This is useful because skewed variables, extreme values, or unusual distributions can influence how the model learns from the data (38).
 
 **Output Explanation**
 
@@ -380,7 +380,7 @@ Checking for distribution to see whether it's symmetric, skewed, or multi-modal.
 
 **Justification**
 
-Checking the correlation matrix is a quick way to see which climate variables might have the strongest relationship with pedestrian demand, which does seem like they have some influence on the target variable from the results. This is mainly to show whether the relationship is positive or negative, even though correlation does not prove causation.
+Checking the correlation matrix is a quick way to see which climate variables might have the strongest relationship with pedestrian demand, which does seem like they have some influence on the target variable from the results. This is mainly to show whether the relationship is positive or negative, even though correlation does not prove causation (39).
 
 **Output Explanation**
 
@@ -391,13 +391,13 @@ This suggests that climate variables do play a role in influencing the pedestria
 
 ## 7. Time Series Analysis
 
-This section is necessary as exploratory data analysis alone is not enough to check a time series dataset. Hence, time series analysis is necessary to help uncover more trends, seasonality, repeated lag dependence, and stationarity.
+This section is necessary as exploratory data analysis alone is not enough to check a time series dataset. Hence, time series analysis is necessary to help uncover more trends, seasonality, repeated lag dependence, and stationarity (36).
 
 ### 7.1 Pedestrian Count Over Time (24-Hour Rolling Mean)
 
 **Justification**
 
-The previous plot with the pedestrian count over time was noisy, so smoothing over 24 hours may help reveal more patterns of pedestrian activity without the hour-to-hour volatility. 
+The previous plot with the pedestrian count over time was noisy, so smoothing over 24 hours may help reveal more patterns of pedestrian activity without the hour-to-hour volatility (40).
 
 **Output Explanation**
 
@@ -407,7 +407,7 @@ From the plot, it became much more obvious that the highest peaks were during Ne
 
 **Justification**
 
-Seasonal decomposition is necessary because hourly pedestrian demand is expected to have a strong daily cycle, so checking the seasonal component can help check how the typical hour of the day affects pedestrian activity. Since people usually move through the city at different levels during the morning, workday, evening, and late night, this step helps show whether the hour of the day is a factor in pedestrian demand.
+Seasonal decomposition is necessary because hourly pedestrian demand is expected to have a strong daily cycle, so checking the seasonal component can help check how the typical hour of the day affects pedestrian activity. Since people usually move through the city at different levels during the morning, workday, evening, and late night, this step helps show whether the hour of the day is a factor in pedestrian demand (41).
 
 **Output Explanation**
 
@@ -417,7 +417,7 @@ From the plot, it is clear that the seasonal effect is strongly negative at nigh
 
 **Justification**
 
-Checking for autocorrelation is important because it shows whether the current pedestrian demand depends on previous hours, and if strong dependence exists, then lag features will be very useful for forecasting. 
+Checking for autocorrelation is important because it shows whether the current pedestrian demand depends on previous hours, and if strong dependence exists, then lag features will be very useful for forecasting (42).
 
 **Output Explanation**
 
@@ -427,7 +427,7 @@ From the plot, there appears to be a very strong repeating pattern at a regular 
 
 **Justification**
 
-The Augmented Dickey-Fuller Test checks whether the time series is statistically stationary in the unit-root sense, and while not necessary for deep learning modelling, it does provide some more understanding of the patterns underlying the merged dataset.
+The Augmented Dickey-Fuller Test checks whether the time series is statistically stationary in the unit-root sense, and while not necessary for deep learning modelling, it does provide some more understanding of the patterns underlying the merged dataset (43).
 
 **Output Explanation**
 
@@ -435,13 +435,13 @@ The result was that the p-value is extremely small and the test statistic is far
 
 ## 8. Feature Engineering
 
-The feature engineering section is necessary because the current variables in the merged datasets may not necessarily be enough for a strong forecasting model, so doing feature engineering will create more useful variables that help capture other aspects of the datasets, like cyclical structures, recent history, and short-term trends.
+The feature engineering section is necessary because the current variables in the merged datasets may not necessarily be enough for a strong forecasting model, so doing feature engineering will create more useful variables that help capture other aspects of the datasets, like cyclical structures, recent history, and short-term trends (44, 45).
 
 ### 8.1 Creating Time Features
 
 **Justification**
 
-Creating more calendar-based features is necessary because pedestrian activity depends on when that observation happened, as shown in previous plots. Hence, hours, day of week, month, and weekend status are all useful predictors. This step ensures the datetime_hour column is converted into its individual components.
+Creating more calendar-based features is necessary because pedestrian activity depends on when that observation happened, as shown in previous plots. Hence, hours, day of week, month, and weekend status are all useful predictors. This step ensures the datetime_hour column is converted into its individual components (45).
 
 **Output Explanation**
 
@@ -451,7 +451,7 @@ The output shows that new time-based columns were added to the dataset. These in
 
 **Justification**
 
-Cyclical encoding is necessary since time variables are cyclical and not linear, like a clock. If we're talking just normal values like 0 and 23, these two values are quite far apart, but it's not, since it's time and there's only 1 hour difference. Using sine and cosine preserves that circular structure. This step ensures that the time variables are cyclical and prevents the models from learning misleading distances between values at the edge of a cycle.
+Cyclical encoding is necessary since time variables are cyclical and not linear, like a clock. If we're talking just normal values like 0 and 23, these two values are quite far apart, but it's not, since it's time and there's only 1 hour difference. Using sine and cosine preserves that circular structure. This step ensures that the time variables are cyclical and prevents the models from learning misleading distances between values at the edge of a cycle (46).
 
 **Output Explanation**
 
@@ -461,7 +461,7 @@ The output shows that new cyclical time features were created, including hour_si
 
 **Justification**
 
-Wind direction is also circular, being 360 degrees, meaning 0 and 359 degrees are almost the same direction. So wind direction must also be converted to cyclical for a continuous form, and ensure consistency with treatments of cyclical variables like time.
+Wind direction is also circular, being 360 degrees, meaning 0 and 359 degrees are almost the same direction. So wind direction must also be converted to cyclical for a continuous form, and ensure consistency with treatments of cyclical variables like time (46).
 
 **Output Explanation**
 
@@ -471,7 +471,7 @@ The output shows that two new features were created, wind_dir_sin and wind_dir_c
 
 **Justification**
 
-Lag features are important, as indicated by the autocorrelation plot, since pedestrian demand is highly dependent on recent history based on the autocorrelation plot.
+Lag features are important, as indicated by the autocorrelation plot, since pedestrian demand is highly dependent on recent history based on the autocorrelation plot (47, 48).
 
 **Output Explanation**
 
@@ -481,7 +481,7 @@ The features lag_1, lag_24, and lag_168 capture the previous hour, previous day,
 
 **Justification**
 
-Rolling features summarise recent pedestrian counts rather than relying on a single observation for a datapoint, allowing the model to capture the short-term trend and help smooth the short-term noise. 
+Rolling features summarise recent pedestrian counts rather than relying on a single observation for a datapoint, allowing the model to capture the short-term trend and help smooth the short-term noise (47).
 
 **Output Explanation**
 
@@ -491,7 +491,7 @@ Some new predictors were added, like rolling_mean_24, which summarises the previ
 
 **Justification**
 
-This step removes the rows with missing values created from the lag and rolling features at the beginning of the ordered merged dataset, since they cannot be used as they are incomplete predictor information. By removing these rows, the dataset lost a part of the early period as a trade-off in the pipeline, which is reasonable considering the dataset is being updated in real-time, so there will be more data points to use in the future, hence, negligible.
+This step removes the rows with missing values created from the lag and rolling features at the beginning of the ordered merged dataset, since they cannot be used as they are incomplete predictor information. By removing these rows, the dataset lost a part of the early period as a trade-off in the pipeline, which is reasonable considering the dataset is being updated in real-time, so there will be more data points to use in the future, hence, negligible (48).
 
 **Output Explanation**
 
@@ -501,7 +501,7 @@ The output shows that all rows with missing values were removed, and the dataset
 
 **Justification**
 
-Since the cyclical variables were created, the original raw cyclical variables have become redundant. So removing these variables helps reduce feature duplication and makes the modelling easier and cleaner. 
+Since the cyclical variables were created, the original raw cyclical variables have become redundant. So removing these variables helps reduce feature duplication and makes the modelling easier and cleaner (23, 24).
 
 **Output Explanation**
 
@@ -509,15 +509,15 @@ The averagewinddirection, hour, day_of_week, and month columns are dropped. Resu
 
 ## 9. Preparing Train/Val/Test Splits
 
-Preparing the splits is necessary for training a forecasting model, so that the future periods are evaluated, and not on randomly selected time periods. Hence, splitting the dataset based on time is important so that the model being trained on the past can predict the future, like in real-world scenarios.
+Preparing the splits is necessary for training a forecasting model, so that the future periods are evaluated, and not on randomly selected time periods. Hence, splitting the dataset based on time is important so that the model being trained on the past can predict the future, like in real-world scenarios (49).
 
 ### 9.1 Splitting The Data By Time
 
 **Justification**
 
-Chronological splitting in time-series forecasting is to prevent leaking future information into the training process. For example is if random splitting were to be used, then a model can be trained on data points in 2026, but is tested on a time period in 2025. Hence, the validation and test set must be later, and the training set must be the past, as shown here.
+Chronological splitting in time-series forecasting is to prevent leaking future information into the training process. For example is if random splitting were to be used, then a model can be trained on data points in 2026, but is tested on a time period in 2025. Hence, the validation and test set must be later, and the training set must be the past, as shown here (49).
 
-The split for training, validation and testing is 80:10:10 to ensure that there are enough data points used for training, with enough data points to perform validation and testing. Deep learning tends to require a large number of data points, so using this split ratio prevents underfitting.
+The split for training, validation and testing is 80:10:10 to ensure that there are enough data points used for training, with enough data points to perform validation and testing. Deep learning tends to require a large number of data points, so using this split ratio prevents underfitting (50).
 
 **Output Explanation**
 
@@ -527,7 +527,7 @@ The output confirms that the data was split chronologically, with the training d
 
 **Justification**
 
-This step is necessary to separate the predictor inputs X and the output target y. This is necessary because the model needs to know which columns are used as inputs and which column it needs to predict.
+This step is necessary to separate the predictor inputs X and the output target y. This is necessary because the model needs to know which columns are used as inputs and which column it needs to predict (51).
 
 **Output Explanation**
 
@@ -537,9 +537,9 @@ The target is set to pedestriancount, which is the variable the model is trying 
 
 **Justification**
 
-Scaling the features is necessary because the predictor variables are measured on different scales. For example, temperature, humidity, air pressure, wind speed, pollution values, and lagged pedestrian counts all have different ranges. Hence, needs to be standardised so that the variables are unitless, allowing the variables to be able to directly compared. 
+Scaling the features is necessary because the predictor variables are measured on different scales. For example, temperature, humidity, air pressure, wind speed, pollution values, and lagged pedestrian counts all have different ranges. Hence, needs to be standardised so that the variables are unitless, allowing the variables to be able to directly compared (52).
 
-Standardisation basically sets the predictors to have a mean of 0 and a standard deviation of 1. This allows faster convergence when all the input features are on the same scale, preventing feature dominance due to differences in magnitudes, and is generally more stable.
+Standardisation basically sets the predictors to have a mean of 0 and a standard deviation of 1. This allows faster convergence when all the input features are on the same scale, preventing feature dominance due to differences in magnitudes, and is generally more stable (52).
 
 **Output Explanation**
 
@@ -549,7 +549,7 @@ The output shows that the training, validation, and test feature sets were succe
 
 **Justification**
 
-Creating LSTM sequences is necessary because an LSTM model needs data in a sequential format, rather than as separate individual rows. Since this project uses hourly time-series data, the model should look at a window of past observations before predicting the current pedestrian count. A sequence length of 24 hours is used so the model can learn from the previous full day of pedestrian, climate, and time-based patterns.
+Creating LSTM sequences is necessary because an LSTM model needs data in a sequential format, rather than as separate individual rows. Since this project uses hourly time-series data, the model should look at a window of past observations before predicting the current pedestrian count. A sequence length of 24 hours is used so the model can learn from the previous full day of pedestrian, climate, and time-based patterns (53).
 
 **Output Explanation**
 
@@ -557,37 +557,37 @@ The output shows that the scaled training, validation, and test data were conver
 
 ## 10. Baseline LSTM Model
 
-A baseline LSTM model will be built with randomly specified settings to set the baseline model performance to compare with later models using hyperparameter tuning. Basically helps to decide whether later optimisation improves the model's performance.
+A baseline LSTM model will be built with randomly specified settings to set the baseline model performance to compare with later models using hyperparameter tuning. Basically helps to decide whether later optimisation improves the model's performance (54, 55).
 
 ### 10.1 Model Building
 
 **Justification**
 
-The baseline model uses the Adam optimiser because it adjusts the learning rate during training, which makes it efficient and stable for deep learning tasks. The MSE loss function is used because this is a regression problem where the model is predicting a numeric pedestrian count. Early stopping is also included to prevent unnecessary training once the validation loss stops improving, since performance may worsen once it plateaus due to overfitting, resulting in worse performance on validation sets.
+The baseline model uses the Adam optimiser because it adjusts the learning rate during training, which makes it efficient and stable for deep learning tasks (56). The MSE loss function is used because this is a regression problem where the model is predicting a numeric pedestrian count (57). Early stopping is also included to prevent unnecessary training once the validation loss stops improving, since performance may worsen once it plateaus due to overfitting, resulting in worse performance on validation sets (58).
 
 **Output Explanation**
 
-The training loss and validation loss both decrease over time, which means that the model is learning patterns from the training data. It does reach a plateau at a certain point, and the validation loss starts going up a bit. Hence, the early stopping happened, putting a stop to the training process and restoring the lowest validation loss model weights.
+The training loss and validation loss both decrease over time, which means that the model is learning patterns from the training data (59). It does reach a plateau at a certain point, and the validation loss starts going up a bit. Hence, the early stopping happened, putting a stop to the training process and restoring the lowest validation loss model weights (58, 59).
 
 ### 10.2 Baseline Loss Plot
 
 **Justification**
 
-Plotting the baseline LSTM model is necessary to see how the model was performing throughout the training process. The training loss curve shows how well it's learning from the training data, and the validation loss curve shows how the model trained on the training data performs on the validation data that it hasn't seen before.
+Plotting the baseline LSTM model is necessary to see how the model was performing throughout the training process. The training loss curve shows how well it's learning from the training data, and the validation loss curve shows how the model trained on the training data performs on the validation data that it hasn't seen before (59).
 
 **Output Explanation**
 
-The output shows the training loss and validation loss across each epoch for the baseline LSTM model, with the training loss still going down, but early stopping happened since the validation loss was starting to go back up, meaning overfitting was starting to happen.
+The output shows the training loss and validation loss across each epoch for the baseline LSTM model, with the training loss still going down, but early stopping happened since the validation loss was starting to go back up, meaning overfitting was starting to happen (58, 59).
 
 ## 11. Hyperparameter Tuning LSTM Model
 
-Hyperparameter tuning is necessary because the baseline LSTM model may not use the best settings for this dataset. Different choices, such as the number of LSTM units, dropout rate, learning rate, and batch size, can affect how well the model learns from the time-series data. This will ensure the evaluation metrics for the model's performance will be higher, avoiding overfitting/underfitting, and allowing faster convergence.
+Hyperparameter tuning is necessary because the baseline LSTM model may not use the best settings for this dataset. Different choices, such as the number of LSTM units, dropout rate, learning rate, and batch size, can affect how well the model learns from the time-series data (60, 61, 62, 63). This will ensure the evaluation metrics for the model's performance will be higher, avoiding overfitting/underfitting, and allowing faster convergence (60, 61, 62).
 
 ### 11.1 Model Building With Hyperparameter Comparisons
 
 **Justification**
 
-A small search space was used to compare multiple combinations, just to see what works best without using up too much computational power and time. The tuning grid includes different numbers of LSTM units, dropout rates, learning rates, and batch sizes. These hyperparameters were selected because more LSTM units can help the model learn more complex time-series patterns, dropout can reduce overfitting by randomly ignoring some neurons during training, the learning rate controls how quickly the model updates during training, and batch size affects training speed and model stability.
+A small search space was used to compare multiple combinations, just to see what works best without using up too much computational power and time (60). The tuning grid includes different numbers of LSTM units, dropout rates, learning rates, and batch sizes. These hyperparameters were selected because more LSTM units can help the model learn more complex time-series patterns, dropout can reduce overfitting by randomly ignoring some neurons during training, the learning rate controls how quickly the model updates during training, and batch size affects training speed and model stability (60, 61, 62, 63).
 
 **Output Explanation**
 
@@ -595,13 +595,13 @@ Multiple different combinations of hyperparameters were used to compare validati
 
 ## 12. Evaluating Model Performance
 
-Evaluating a model's performance is important to see how well the model might work in the real-world. Hence, having some evaluation metrics ensures that this process is objective and comparable. Metrics such as MAE, RMSE, and R-squared help show how close the predictions are to the actual pedestrian counts and how well the model explains the overall variation in the target variable.
+Evaluating a model's performance is important to see how well the model might work in the real-world. Hence, having some evaluation metrics ensures that this process is objective and comparable (65). Metrics such as MAE, RMSE, and R-squared help show how close the predictions are to the actual pedestrian counts and how well the model explains the overall variation in the target variable (64, 65, 66, 67).
 
 ### 12.1 Baseline Vs Best Hyperparameter Tuning Model
 
 **Justification**
 
-The evaluation uses MAE, RMSE, and R-squared because they are suitable metrics for a regression forecasting task. MAE measures the average absolute prediction error, so it shows how far the predicted pedestrian counts are from the actual values on average, so a lower MAE is better. RMSE also measures prediction error, but it gives larger errors more weight. This is useful because big mistakes in pedestrian demand forecasting are more important to detect, so a lower RMSE is better. R-squared measures how much of the variation in pedestrian count is explained by the model, this helps show the overall fit of the model, so a higher R-squared is better.
+The evaluation uses MAE, RMSE, and R-squared because they are suitable metrics for a regression forecasting task (65). MAE measures the average absolute prediction error, so it shows how far the predicted pedestrian counts are from the actual values on average, so a lower MAE is better (66). RMSE also measures prediction error, but it gives larger errors more weight. This is useful because big mistakes in pedestrian demand forecasting are more important to detect, so a lower RMSE is better (64). R-squared measures how much of the variation in pedestrian count is explained by the model, this helps show the overall fit of the model, so a higher R-squared is better (67).
 
 **Output Explanation**
 
@@ -611,7 +611,7 @@ The tuned model has a lower MAE than the baseline model, has a lower RMSE, and a
 
 **Justification**
 
-To provide a visual representation of how the predicted values of the baseline and tuned LTSM models match up against the actual test values, and to see how well they align with the actual test values, which might have resulted in the difference in the evaluation metrics score.
+To provide a visual representation of how the predicted values of the baseline and tuned LTSM models match up against the actual test values, and to see how well they align with the actual test values, which might have resulted in the difference in the evaluation metrics score (68, 69).
 
 **Output Explanation**
 
@@ -665,4 +665,72 @@ Though the difference may possibly be due to predictors that were unaccounted fo
 
 ## 14. References
 
-1. test
+1. https://pandas.pydata.org/
+2. https://pandas.pydata.org/docs/user_guide/timeseries.html
+3. https://matplotlib.org/
+4. https://scikit-learn.org/stable/modules/preprocessing.html
+5. https://www.tensorflow.org/guide/keras
+6. https://peps.python.org/pep-0008/
+7. https://www.tensorflow.org/api_docs/python/tf/keras/utils/set_random_seed
+8. https://help.opendatasoft.com/apis/ods-explore-v2/
+9. https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/
+10. https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/
+11. https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/
+12. https://www.ibm.com/think/topics/data-profiling
+13. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html
+14. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.columns.html
+15. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html
+16. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html
+17. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isna.html
+18. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+19. https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html
+20. https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nunique.html
+21. https://www.ibm.com/think/topics/data-cleaning
+22. https://www.tableau.com/learn/articles/what-is-data-cleaning
+23. https://aml4td.org/chapters/feature-selection.html
+24. https://www.ibm.com/think/topics/feature-selection
+25. https://arxiv.org/html/2404.04905v1
+26. https://cribl.io/glossary/data-normalization/
+27. https://www.epirhandbook.com/en/new_pages/dates.html
+28. https://skforecast.org/0.12.1/faq/time-series-aggregation
+29. https://support.microsoft.com/en-us/office/join-tables-and-queries-3f5838bd-24a0-4832-9bc1-07061a1478f6
+30. https://www.ibm.com/think/topics/data-integration
+31. https://www.rudderstack.com/learn/data-collection/validation-of-data-collection/
+32. https://cloud.google.com/learn/what-is-time-series
+33. https://www.mdpi.com/2624-6511/8/3/82
+34. https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm
+35. https://otexts.com/fpp2/tspatterns.html
+36. https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm
+37. https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc443.htm
+38. https://www.itl.nist.gov/div898/handbook/eda/section3/histogra.htm
+39. https://online.stat.psu.edu/stat200/lesson/3/3.4/3.4.2
+40. https://statisticsbyjim.com/time-series/moving-averages-smoothing/
+41. https://www.datacamp.com/tutorial/time-series-decomposition
+42. https://online.stat.psu.edu/stat462/node/188/
+43. https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/time-series/how-to/augmented-dickey-fuller-test/interpret-the-results/all-statistics-and-graphs/
+44. https://www.ibm.com/think/topics/feature-engineering
+45. https://dotdata.com/blog/practical-guide-for-feature-engineering-of-time-series-data/
+46. https://skforecast.org/latest/faq/cyclical-features-time-series.html
+47. https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html
+48. https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/LagFeatures.html
+49. https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/train-test-split-time-series
+50. https://www.v7labs.com/blog/train-validation-test-set
+51. https://www.ibm.com/think/topics/supervised-learning
+52. https://apxml.com/courses/introduction-to-neural-networks/chapter-2-data-preparation-neural-networks/feature-scaling
+53. https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/
+54. https://blog.ml.cmu.edu/2020/08/31/3-baselines/
+55. https://www.tensorflow.org/tutorials/structured_data/time_series
+56. https://keras.io/api/optimizers/adam/
+57. https://apxml.com/courses/introduction-to-deep-learning/chapter-3-training-loss-optimization/regression-loss-functions
+58. https://srdas.github.io/DLBook/ImprovingModelGeneralization.html
+59. https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves
+60. https://aws.amazon.com/what-is/hyperparameter-tuning/
+61. https://jmlr.org/papers/v15/srivastava14a.html
+62. https://www.ibm.com/think/topics/learning-rate
+63. https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/
+64. https://www.datacamp.com/tutorial/rmse
+65. https://apxml.com/courses/getting-started-with-scikit-learn/chapter-2-supervised-learning-regression/regression-evaluation-metrics
+66. https://www.datacamp.com/tutorial/mean-absolute-error
+67. https://www.datacamp.com/tutorial/r-squared
+68. https://www.mathworks.com/help/stats/assess-model-performance-in-regression-learner.html
+69. https://www.sciencedirect.com/science/article/abs/pii/S0304380008002305
