@@ -64,6 +64,7 @@ Client: City of Melbourne
   - [13.2 Preparing The Latest Input Window](#132-preparing-the-latest-input-window)
   - [13.3 Making The Prediction](#133-making-the-prediction)
   - [13.4 Bar Chart Of Actual Vs Predicted](#134-bar-chart-of-actual-vs-predicted)
+- [14. References](#14-references)
 
 ---
 
@@ -661,3 +662,7 @@ A bar chart was included just to have a visual comparison of the tuned LTSM mode
 From the chart, the predicted value is slightly lower than the actual value, meaning the model underestimated the pedestrian count for the latest timestamp. However, the two bars are still relatively close, which suggests that the model produced a reasonable prediction.
 
 Though the difference may possibly be due to predictors that were unaccounted for, as pedestrian activity depends on many other factors, like public holidays, WFH policies, and maybe even geopolitical events like the Iran War happening as of 2026.
+
+## 14. References
+
+1. test
