@@ -665,140 +665,140 @@ Though the difference may possibly be due to predictors that were unaccounted fo
 
 ## 14. Vancouver References
 
-1. pandas [Internet]. [cited 2026 Mar 19]. Available from: [https://pandas.pydata.org/](https://pandas.pydata.org/)
+1. pandas [Internet]. pandas - Python Data Analysis Library. [cited 2026 Mar 19]. Available from: [https://pandas.pydata.org/](https://pandas.pydata.org/)
 
-2. pandas [Internet]. Time series/date functionality. [cited 2026 Mar 19]. Available from: [https://pandas.pydata.org/docs/user_guide/timeseries.html](https://pandas.pydata.org/docs/user_guide/timeseries.html)
+2. pandas [Internet]. Time series / date functionality — pandas 3.0.2 documentation. [cited 2026 Mar 19]. Available from: [https://pandas.pydata.org/docs/user_guide/timeseries.html](https://pandas.pydata.org/docs/user_guide/timeseries.html)
 
-3. Matplotlib [Internet]. [cited 2026 Mar 19]. Available from: [https://matplotlib.org/](https://matplotlib.org/)
+3. Matplotlib [Internet]. Matplotlib — Visualization with Python. [cited 2026 Mar 19]. Available from: [https://matplotlib.org/](https://matplotlib.org/)
 
-4. scikit-learn [Internet]. Preprocessing data. [cited 2026 Mar 19]. Available from: [https://scikit-learn.org/stable/modules/preprocessing.html](https://scikit-learn.org/stable/modules/preprocessing.html)
+4. scikit-learn [Internet]. 7.3. Preprocessing data — scikit-learn 1.8.0 documentation. [cited 2026 Mar 19]. Available from: [https://scikit-learn.org/stable/modules/preprocessing.html](https://scikit-learn.org/stable/modules/preprocessing.html)
 
-5. TensorFlow [Internet]. Google. The Keras guide. [cited 2026 Mar 19]. Available from: [https://www.tensorflow.org/guide/keras](https://www.tensorflow.org/guide/keras)
+5. TensorFlow [Internet]. Keras: the high-level API for TensorFlow. [cited 2026 Mar 19]. Available from: [https://www.tensorflow.org/guide/keras](https://www.tensorflow.org/guide/keras)
 
-6. Python Enhancement Proposals [Internet]. Python Software Foundation. PEP 8 – Style Guide for Python Code. [cited 2026 Mar 19]. Available from: [https://peps.python.org/pep-0008/](https://peps.python.org/pep-0008/)
+6. Python Software Foundation [Internet]. PEP 8 – Style Guide for Python Code. [cited 2026 Mar 19]. Available from: [https://peps.python.org/pep-0008/](https://peps.python.org/pep-0008/)
 
-7. TensorFlow [Internet]. Google. tf.keras.utils.set_random_seed. [cited 2026 Mar 19]. Available from: [https://www.tensorflow.org/api_docs/python/tf/keras/utils/set_random_seed](https://www.tensorflow.org/api_docs/python/tf/keras/utils/set_random_seed)
+7. TensorFlow [Internet]. tf.keras.utils.set_random_seed | TensorFlow v2.16.1. [cited 2026 Mar 19]. Available from: [https://www.tensorflow.org/api_docs/python/tf/keras/utils/set_random_seed](https://www.tensorflow.org/api_docs/python/tf/keras/utils/set_random_seed)
 
-8. Opendatasoft [Internet]. Opendatasoft. ODS Explore API v2. [cited 2026 Mar 19]. Available from: [https://help.opendatasoft.com/apis/ods-explore-v2/](https://help.opendatasoft.com/apis/ods-explore-v2/)
+8. Opendatasoft [Internet]. Huwise’s Explore API Reference Documentation. [cited 2026 Mar 19]. Available from: [https://help.opendatasoft.com/apis/ods-explore-v2/](https://help.opendatasoft.com/apis/ods-explore-v2/)
 
-9. City of Melbourne Open Data [Internet]. Melbourne: City of Melbourne. Pedestrian Counting System – Sensor Locations. [cited 2026 Mar 21]. Available from: [https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/)
+9. City of Melbourne Open Data [Internet]. Pedestrian Counting System - Sensor Locations. [cited 2026 Mar 21]. Available from: [https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/)
 
-10. City of Melbourne Open Data [Internet]. Melbourne: City of Melbourne. Pedestrian Counting System – Monthly Counts per Hour. [cited 2026 Mar 21]. Available from: [https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/)
+10. City of Melbourne Open Data [Internet]. Pedestrian Counting System (counts per hour). [cited 2026 Mar 21]. Available from: [https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/)
 
-11. City of Melbourne Open Data [Internet]. Melbourne: City of Melbourne. Microclimate Sensors Data. [cited 2026 Mar 21]. Available from: [https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/](https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/)
+11. City of Melbourne Open Data [Internet]. Microclimate sensors data. [cited 2026 Mar 21]. Available from: [https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/](https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/)
 
-12. IBM Think [Internet]. Armonk (NY): IBM. What is data profiling? [cited 2026 Mar 24]. Available from: [https://www.ibm.com/think/topics/data-profiling](https://www.ibm.com/think/topics/data-profiling)
+12. IBM Think [Internet]. What is data profiling? [cited 2026 Mar 24]. Available from: [https://www.ibm.com/think/topics/data-profiling](https://www.ibm.com/think/topics/data-profiling)
 
-13. pandas [Internet]. pandas.DataFrame.shape. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html)
+13. pandas [Internet]. pandas.DataFrame.shape — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html)
 
-14. pandas [Internet]. pandas.DataFrame.columns. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.columns.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.columns.html)
+14. pandas [Internet]. pandas.DataFrame.columns — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.columns.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.columns.html)
 
-15. pandas [Internet]. pandas.DataFrame.dtypes. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html)
+15. pandas [Internet]. pandas.DataFrame.dtypes — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html)
 
-16. pandas [Internet]. pandas.DataFrame.info. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html)
+16. pandas [Internet]. pandas.DataFrame.info — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html)
 
-17. pandas [Internet]. pandas.DataFrame.isna. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isna.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isna.html)
+17. pandas [Internet]. pandas.DataFrame.isna — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isna.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isna.html)
 
-18. pandas [Internet]. pandas.DataFrame.describe. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)
+18. pandas [Internet]. pandas.DataFrame.describe — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)
 
-19. pandas [Internet]. pandas.to_datetime. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html)
+19. pandas [Internet]. pandas.to_datetime — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html)
 
-20. pandas [Internet]. pandas.DataFrame.nunique. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nunique.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nunique.html)
+20. pandas [Internet]. pandas.DataFrame.nunique — pandas 3.0.2 documentation. [cited 2026 Mar 24]. Available from: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nunique.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nunique.html)
 
-21. IBM Think [Internet]. Armonk (NY): IBM. What is data cleaning? [cited 2026 Mar 27]. Available from: [https://www.ibm.com/think/topics/data-cleaning](https://www.ibm.com/think/topics/data-cleaning)
+21. Rogers J, Jonker A. IBM Think [Internet]. What is data cleaning? [cited 2026 Mar 27]. Available from: [https://www.ibm.com/think/topics/data-cleaning](https://www.ibm.com/think/topics/data-cleaning)
 
-22. Tableau [Internet]. Seattle (WA): Tableau. What is data cleaning? [cited 2026 Mar 27]. Available from: [https://www.tableau.com/learn/articles/what-is-data-cleaning](https://www.tableau.com/learn/articles/what-is-data-cleaning)
+22. Tableau [Internet]. Data cleaning: definition, benefits, and how-to. [cited 2026 Mar 27]. Available from: [https://www.tableau.com/learn/articles/what-is-data-cleaning](https://www.tableau.com/learn/articles/what-is-data-cleaning)
 
-23. Applied Machine Learning for Tabular Data [Internet]. Feature selection. [cited 2026 Mar 31]. Available from: [https://aml4td.org/chapters/feature-selection.html](https://aml4td.org/chapters/feature-selection.html)
+23. Applied Machine Learning for Tabular Data [Internet]. 13 Feature Selection. [cited 2026 Mar 31]. Available from: [https://aml4td.org/chapters/feature-selection.html](https://aml4td.org/chapters/feature-selection.html)
 
-24. IBM Think [Internet]. Armonk (NY): IBM. Feature selection. [cited 2026 Mar 31]. Available from: [https://www.ibm.com/think/topics/feature-selection](https://www.ibm.com/think/topics/feature-selection)
+24. IBM Think [Internet]. What is feature selection? [cited 2026 Mar 31]. Available from: [https://www.ibm.com/think/topics/feature-selection](https://www.ibm.com/think/topics/feature-selection)
 
-25. arXiv [Internet]. Ithaca (NY): Cornell University; 2024. arXiv:2404.04905v1. [cited 2026 Mar 31]. Available from: [https://arxiv.org/html/2404.04905v1](https://arxiv.org/html/2404.04905v1)
+25. Zhou Y, Aryal S, Bouadjenek MR. A comprehensive review of handling missing data: exploring special missing mechanisms. arXiv [Internet]. 2024 Apr 7 [cited 2026 Mar 31]. Available from: [https://arxiv.org/html/2404.04905v1](https://arxiv.org/html/2404.04905v1)
 
-26. Cribl [Internet]. Cribl. Data normalization. [cited 2026 Mar 31]. Available from: [https://cribl.io/glossary/data-normalization/](https://cribl.io/glossary/data-normalization/)
+26. Silverberg-Rajna J. Cribl [Internet]. What is data normalization? 2024 Jan 12 [cited 2026 Mar 31]. Available from: [https://cribl.io/glossary/data-normalization/](https://cribl.io/glossary/data-normalization/)
 
-27. The Epidemiologist R Handbook [Internet]. Dates. [cited 2026 Mar 31]. Available from: [https://www.epirhandbook.com/en/new_pages/dates.html](https://www.epirhandbook.com/en/new_pages/dates.html)
+27. The Epidemiologist R Handbook [Internet]. 9 Working with dates. [cited 2026 Mar 31]. Available from: [https://www.epirhandbook.com/en/new_pages/dates.html](https://www.epirhandbook.com/en/new_pages/dates.html)
 
-28. skforecast [Internet]. Time series aggregation. [cited 2026 Mar 31]. Available from: [https://skforecast.org/0.12.1/faq/time-series-aggregation](https://skforecast.org/0.12.1/faq/time-series-aggregation)
+28. skforecast [Internet]. Time series aggregation - Skforecast Docs. [cited 2026 Mar 31]. Available from: [https://skforecast.org/0.12.1/faq/time-series-aggregation](https://skforecast.org/0.12.1/faq/time-series-aggregation)
 
-29. Microsoft Support [Internet]. Redmond (WA): Microsoft. Join tables and queries. [cited 2026 Mar 31]. Available from: [https://support.microsoft.com/en-us/office/join-tables-and-queries-3f5838bd-24a0-4832-9bc1-07061a1478f6](https://support.microsoft.com/en-us/office/join-tables-and-queries-3f5838bd-24a0-4832-9bc1-07061a1478f6)
+29. Microsoft Support [Internet]. Join tables and queries. [cited 2026 Mar 31]. Available from: [https://support.microsoft.com/en-us/office/join-tables-and-queries-3f5838bd-24a0-4832-9bc1-07061a1478f6](https://support.microsoft.com/en-us/office/join-tables-and-queries-3f5838bd-24a0-4832-9bc1-07061a1478f6)
 
-30. IBM Think [Internet]. Armonk (NY): IBM. Data integration. [cited 2026 Mar 31]. Available from: [https://www.ibm.com/think/topics/data-integration](https://www.ibm.com/think/topics/data-integration)
+30. IBM Think [Internet]. What is data integration? [cited 2026 Mar 31]. Available from: [https://www.ibm.com/think/topics/data-integration](https://www.ibm.com/think/topics/data-integration)
 
-31. RudderStack [Internet]. RudderStack. Validation of data collection. [cited 2026 Mar 31]. Available from: [https://www.rudderstack.com/learn/data-collection/validation-of-data-collection/](https://www.rudderstack.com/learn/data-collection/validation-of-data-collection/)
+31. RudderStack [Internet]. What is data validation? Why, when, and how to use it. [cited 2026 Mar 31]. Available from: [https://www.rudderstack.com/learn/data-collection/validation-of-data-collection/](https://www.rudderstack.com/learn/data-collection/validation-of-data-collection/)
 
-32. Google Cloud [Internet]. Mountain View (CA): Google. What is time series? [cited 2026 Apr 5]. Available from: [https://cloud.google.com/learn/what-is-time-series](https://cloud.google.com/learn/what-is-time-series)
+32. Google Cloud [Internet]. What is time-series forecasting? [cited 2026 Apr 5]. Available from: [https://cloud.google.com/learn/what-is-time-series](https://cloud.google.com/learn/what-is-time-series)
 
-33. MDPI [Internet]. Basel: MDPI; 2025. Smart Cities, volume 8, issue 3, article 82. [cited 2026 Apr 5]. Available from: [https://www.mdpi.com/2624-6511/8/3/82](https://www.mdpi.com/2624-6511/8/3/82)
+33. AlSalehy AS, Bailey M. Improving time series data quality: identifying outliers and handling missing values in a multilocation gas and weather dataset. Smart Cities [Internet]. 2025 May 7 [cited 2026 Apr 5];8(3):82. Available from: [https://www.mdpi.com/2624-6511/8/3/82](https://www.mdpi.com/2624-6511/8/3/82)
 
-34. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. Gaithersburg (MD): National Institute of Standards and Technology. Exploratory data analysis. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm](https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm)
+34. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. 1.1.1. What is EDA? [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm](https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm)
 
-35. Forecasting: Principles and Practice [Internet]. OTexts. Time series patterns. [cited 2026 Apr 5]. Available from: [https://otexts.com/fpp2/tspatterns.html](https://otexts.com/fpp2/tspatterns.html)
+35. Hyndman RJ, Athanasopoulos G. Forecasting: Principles and Practice [Internet]. 2nd ed. 2.3 Time series patterns. [cited 2026 Apr 5]. Available from: [https://otexts.com/fpp2/tspatterns.html](https://otexts.com/fpp2/tspatterns.html)
 
-36. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. Gaithersburg (MD): National Institute of Standards and Technology. Process modelling. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm)
+36. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. 6.4. Introduction to Time Series Analysis. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm)
 
-37. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. Gaithersburg (MD): National Institute of Standards and Technology. Process modelling methods. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc443.htm](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc443.htm)
+37. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. 6.4.4.3. Seasonality. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc443.htm](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc443.htm)
 
-38. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. Gaithersburg (MD): National Institute of Standards and Technology. Histogram. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/eda/section3/histogra.htm](https://www.itl.nist.gov/div898/handbook/eda/section3/histogra.htm)
+38. NIST/SEMATECH e-Handbook of Statistical Methods [Internet]. 1.3.3.14. Histogram. [cited 2026 Apr 5]. Available from: [https://www.itl.nist.gov/div898/handbook/eda/section3/histogra.htm](https://www.itl.nist.gov/div898/handbook/eda/section3/histogra.htm)
 
-39. PennState Eberly College of Science [Internet]. University Park (PA): Pennsylvania State University. Boxplots. [cited 2026 Apr 5]. Available from: [https://online.stat.psu.edu/stat200/lesson/3/3.4/3.4.2](https://online.stat.psu.edu/stat200/lesson/3/3.4/3.4.2)
+39. PennState Eberly College of Science [Internet]. 3.4.2 - Correlation | STAT 200. [cited 2026 Apr 5]. Available from: [https://online.stat.psu.edu/stat200/lesson/3/3.4/3.4.2](https://online.stat.psu.edu/stat200/lesson/3/3.4/3.4.2)
 
-40. Statistics By Jim [Internet]. Statistics By Jim. Moving averages and smoothing. [cited 2026 Apr 9]. Available from: [https://statisticsbyjim.com/time-series/moving-averages-smoothing/](https://statisticsbyjim.com/time-series/moving-averages-smoothing/)
+40. Frost J. Statistics By Jim [Internet]. Using moving averages to smooth time series data. [cited 2026 Apr 9]. Available from: [https://statisticsbyjim.com/time-series/moving-averages-smoothing/](https://statisticsbyjim.com/time-series/moving-averages-smoothing/)
 
-41. DataCamp [Internet]. New York: DataCamp. Time series decomposition. [cited 2026 Apr 9]. Available from: [https://www.datacamp.com/tutorial/time-series-decomposition](https://www.datacamp.com/tutorial/time-series-decomposition)
+41. DataCamp [Internet]. Time series decomposition: trends, seasonality, and noise. [cited 2026 Apr 9]. Available from: [https://www.datacamp.com/tutorial/time-series-decomposition](https://www.datacamp.com/tutorial/time-series-decomposition)
 
-42. PennState Eberly College of Science [Internet]. University Park (PA): Pennsylvania State University. Autocorrelation. [cited 2026 Apr 9]. Available from: [https://online.stat.psu.edu/stat462/node/188/](https://online.stat.psu.edu/stat462/node/188/)
+42. PennState Eberly College of Science [Internet]. 10.2 - Autocorrelation and Time Series Methods | STAT 462. [cited 2026 Apr 9]. Available from: [https://online.stat.psu.edu/stat462/node/188/](https://online.stat.psu.edu/stat462/node/188/)
 
-43. Minitab Support [Internet]. State College (PA): Minitab. Interpret the results for Augmented Dickey-Fuller Test. [cited 2026 Apr 9]. Available from: [https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/time-series/how-to/augmented-dickey-fuller-test/interpret-the-results/all-statistics-and-graphs/](https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/time-series/how-to/augmented-dickey-fuller-test/interpret-the-results/all-statistics-and-graphs/)
+43. Minitab Support [Internet]. Interpret all statistics and graphs for Augmented Dickey-Fuller Test. [cited 2026 Apr 9]. Available from: [https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/time-series/how-to/augmented-dickey-fuller-test/interpret-the-results/all-statistics-and-graphs/](https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/time-series/how-to/augmented-dickey-fuller-test/interpret-the-results/all-statistics-and-graphs/)
 
-44. IBM Think [Internet]. Armonk (NY): IBM. Feature engineering. [cited 2026 Apr 13]. Available from: [https://www.ibm.com/think/topics/feature-engineering](https://www.ibm.com/think/topics/feature-engineering)
+44. IBM Think [Internet]. What is a feature engineering? [cited 2026 Apr 13]. Available from: [https://www.ibm.com/think/topics/feature-engineering](https://www.ibm.com/think/topics/feature-engineering)
 
-45. dotData [Internet]. dotData. Practical guide for feature engineering of time series data. [cited 2026 Apr 13]. Available from: [https://dotdata.com/blog/practical-guide-for-feature-engineering-of-time-series-data/](https://dotdata.com/blog/practical-guide-for-feature-engineering-of-time-series-data/)
+45. Gordon J. dotData [Internet]. Practical guide for feature engineering of time series data. 2023 Jun 20 [cited 2026 Apr 13]. Available from: [https://dotdata.com/blog/practical-guide-for-feature-engineering-of-time-series-data/](https://dotdata.com/blog/practical-guide-for-feature-engineering-of-time-series-data/)
 
-46. skforecast [Internet]. Cyclical features in time series. [cited 2026 Apr 13]. Available from: [https://skforecast.org/latest/faq/cyclical-features-time-series.html](https://skforecast.org/latest/faq/cyclical-features-time-series.html)
+46. skforecast [Internet]. Cyclical features in time series - Skforecast Docs. [cited 2026 Apr 13]. Available from: [https://skforecast.org/latest/faq/cyclical-features-time-series.html](https://skforecast.org/latest/faq/cyclical-features-time-series.html)
 
-47. Feature-engine [Internet]. Forecasting. [cited 2026 Apr 13]. Available from: [https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html)
+47. Feature-engine [Internet]. Forecasting Features — 1.8.3. [cited 2026 Apr 13]. Available from: [https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html)
 
-48. Feature-engine [Internet]. LagFeatures. [cited 2026 Apr 13]. Available from: [https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/LagFeatures.html](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/LagFeatures.html)
+48. Feature-engine [Internet]. LagFeatures — 1.8.3. [cited 2026 Apr 13]. Available from: [https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/LagFeatures.html](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/LagFeatures.html)
 
-49. APXML [Internet]. APXML. Train-test split for time series. [cited 2026 Apr 17]. Available from: [https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/train-test-split-time-series](https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/train-test-split-time-series)
+49. APXML [Internet]. Train-Test Split Strategies for Time Series Data. [cited 2026 Apr 17]. Available from: [https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/train-test-split-time-series](https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/train-test-split-time-series)
 
-50. V7 Labs [Internet]. London: V7 Labs. Train, validation and test set. [cited 2026 Apr 17]. Available from: [https://www.v7labs.com/blog/train-validation-test-set](https://www.v7labs.com/blog/train-validation-test-set)
+50. V7 Labs [Internet]. Train Test Validation Split: how to and best practices. 2024 [cited 2026 Apr 17]. Available from: [https://www.v7labs.com/blog/train-validation-test-set](https://www.v7labs.com/blog/train-validation-test-set)
 
-51. IBM Think [Internet]. Armonk (NY): IBM. Supervised learning. [cited 2026 Apr 17]. Available from: [https://www.ibm.com/think/topics/supervised-learning](https://www.ibm.com/think/topics/supervised-learning)
+51. Belcic I, Stryker C. IBM Think [Internet]. What is supervised learning? [cited 2026 Apr 17]. Available from: [https://www.ibm.com/think/topics/supervised-learning](https://www.ibm.com/think/topics/supervised-learning)
 
-52. APXML [Internet]. APXML. Feature scaling. [cited 2026 Apr 17]. Available from: [https://apxml.com/courses/introduction-to-neural-networks/chapter-2-data-preparation-neural-networks/feature-scaling](https://apxml.com/courses/introduction-to-neural-networks/chapter-2-data-preparation-neural-networks/feature-scaling)
+52. APXML [Internet]. Feature Scaling: Normalization and Standardization. [cited 2026 Apr 17]. Available from: [https://apxml.com/courses/introduction-to-neural-networks/chapter-2-data-preparation-neural-networks/feature-scaling](https://apxml.com/courses/introduction-to-neural-networks/chapter-2-data-preparation-neural-networks/feature-scaling)
 
-53. Machine Learning Mastery [Internet]. Machine Learning Mastery. Time series prediction with LSTM recurrent neural networks in Python with Keras. [cited 2026 Apr 22]. Available from: [https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
+53. Brownlee J. Machine Learning Mastery [Internet]. Time series prediction with LSTM recurrent neural networks in Python with Keras. 2022 Aug 7 [cited 2026 Apr 22]. Available from: [https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
 
-54. Carnegie Mellon University Machine Learning Blog [Internet]. Pittsburgh (PA): Carnegie Mellon University; 2020. 3 baselines. [cited 2026 Apr 22]. Available from: [https://blog.ml.cmu.edu/2020/08/31/3-baselines/](https://blog.ml.cmu.edu/2020/08/31/3-baselines/)
+54. Li D, Hasanaj E, Li S. Machine Learning Blog | ML@CMU | Carnegie Mellon University [Internet]. 3 – Baselines. 2020 Aug 31 [cited 2026 Apr 22]. Available from: [https://blog.ml.cmu.edu/2020/08/31/3-baselines/](https://blog.ml.cmu.edu/2020/08/31/3-baselines/)
 
-55. TensorFlow [Internet]. Google. Time series forecasting. [cited 2026 Apr 22]. Available from: [https://www.tensorflow.org/tutorials/structured_data/time_series](https://www.tensorflow.org/tutorials/structured_data/time_series)
+55. TensorFlow [Internet]. Time series forecasting | TensorFlow Core. [cited 2026 Apr 22]. Available from: [https://www.tensorflow.org/tutorials/structured_data/time_series](https://www.tensorflow.org/tutorials/structured_data/time_series)
 
-56. Keras [Internet]. Keras. Adam. [cited 2026 Apr 22]. Available from: [https://keras.io/api/optimizers/adam/](https://keras.io/api/optimizers/adam/)
+56. Keras [Internet]. Adam. [cited 2026 Apr 22]. Available from: [https://keras.io/api/optimizers/adam/](https://keras.io/api/optimizers/adam/)
 
-57. APXML [Internet]. APXML. Regression loss functions. [cited 2026 Apr 22]. Available from: [https://apxml.com/courses/introduction-to-deep-learning/chapter-3-training-loss-optimization/regression-loss-functions](https://apxml.com/courses/introduction-to-deep-learning/chapter-3-training-loss-optimization/regression-loss-functions)
+57. APXML [Internet]. Regression Loss Functions (MSE, MAE). [cited 2026 Apr 22]. Available from: [https://apxml.com/courses/introduction-to-deep-learning/chapter-3-training-loss-optimization/regression-loss-functions](https://apxml.com/courses/introduction-to-deep-learning/chapter-3-training-loss-optimization/regression-loss-functions)
 
-58. Das SR. Deep Learning Book [Internet]. Improving model generalization. [cited 2026 Apr 22]. Available from: [https://srdas.github.io/DLBook/ImprovingModelGeneralization.html](https://srdas.github.io/DLBook/ImprovingModelGeneralization.html)
+58. Das SR. Deep Learning [Internet]. Improving Model Generalization. [cited 2026 Apr 22]. Available from: [https://srdas.github.io/DLBook/ImprovingModelGeneralization.html](https://srdas.github.io/DLBook/ImprovingModelGeneralization.html)
 
-59. Google for Developers [Internet]. Mountain View (CA): Google. Interpreting loss curves. [cited 2026 Apr 22]. Available from: [https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves](https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves)
+59. Google for Developers [Internet]. Overfitting: interpreting loss curves. [cited 2026 Apr 22]. Available from: [https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves](https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves)
 
-60. Amazon Web Services [Internet]. Seattle (WA): Amazon Web Services. What is hyperparameter tuning? [cited 2026 Apr 25]. Available from: [https://aws.amazon.com/what-is/hyperparameter-tuning/](https://aws.amazon.com/what-is/hyperparameter-tuning/)
+60. Amazon Web Services [Internet]. What is Hyperparameter Tuning? - Hyperparameter Tuning Methods Explained. [cited 2026 Apr 25]. Available from: [https://aws.amazon.com/what-is/hyperparameter-tuning/](https://aws.amazon.com/what-is/hyperparameter-tuning/)
 
-61. Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R. Journal of Machine Learning Research [Internet]. JMLR; 2014. Dropout: a simple way to prevent neural networks from overfitting. [cited 2026 Apr 25]. Available from: [https://jmlr.org/papers/v15/srivastava14a.html](https://jmlr.org/papers/v15/srivastava14a.html)
+61. Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R. Dropout: a simple way to prevent neural networks from overfitting. J Mach Learn Res [Internet]. 2014 [cited 2026 Apr 25];15(56):1929-58. Available from: [https://jmlr.org/papers/v15/srivastava14a.html](https://jmlr.org/papers/v15/srivastava14a.html)
 
-62. IBM Think [Internet]. Armonk (NY): IBM. Learning rate. [cited 2026 Apr 25]. Available from: [https://www.ibm.com/think/topics/learning-rate](https://www.ibm.com/think/topics/learning-rate)
+62. Belcic I, Stryker C. IBM Think [Internet]. What is learning rate in machine learning? [cited 2026 Apr 25]. Available from: [https://www.ibm.com/think/topics/learning-rate](https://www.ibm.com/think/topics/learning-rate)
 
-63. Machine Learning Mastery [Internet]. Machine Learning Mastery. How to control the speed and stability of training neural networks with gradient descent batch size. [cited 2026 Apr 25]. Available from: [https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/](https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/)
+63. Brownlee J. Machine Learning Mastery [Internet]. How to control the stability of training neural networks with the batch size. [cited 2026 Apr 25]. Available from: [https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/](https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/)
 
-64. DataCamp [Internet]. New York: DataCamp. RMSE. [cited 2026 Apr 28]. Available from: [https://www.datacamp.com/tutorial/rmse](https://www.datacamp.com/tutorial/rmse)
+64. DataCamp [Internet]. RMSE explained: a guide to regression prediction accuracy. [cited 2026 Apr 28]. Available from: [https://www.datacamp.com/tutorial/rmse](https://www.datacamp.com/tutorial/rmse)
 
-65. APXML [Internet]. APXML. Regression evaluation metrics. [cited 2026 Apr 28]. Available from: [https://apxml.com/courses/getting-started-with-scikit-learn/chapter-2-supervised-learning-regression/regression-evaluation-metrics](https://apxml.com/courses/getting-started-with-scikit-learn/chapter-2-supervised-learning-regression/regression-evaluation-metrics)
+65. APXML [Internet]. Regression Evaluation Metrics (MAE, MSE, R2). [cited 2026 Apr 28]. Available from: [https://apxml.com/courses/getting-started-with-scikit-learn/chapter-2-supervised-learning-regression/regression-evaluation-metrics](https://apxml.com/courses/getting-started-with-scikit-learn/chapter-2-supervised-learning-regression/regression-evaluation-metrics)
 
-66. DataCamp [Internet]. New York: DataCamp. Mean absolute error. [cited 2026 Apr 28]. Available from: [https://www.datacamp.com/tutorial/mean-absolute-error](https://www.datacamp.com/tutorial/mean-absolute-error)
+66. DataCamp [Internet]. Mean Absolute Error explained: measuring model accuracy. 2025 Aug 8 [cited 2026 Apr 28]. Available from: [https://www.datacamp.com/tutorial/mean-absolute-error](https://www.datacamp.com/tutorial/mean-absolute-error)
 
-67. DataCamp [Internet]. New York: DataCamp. R-squared. [cited 2026 Apr 28]. Available from: [https://www.datacamp.com/tutorial/r-squared](https://www.datacamp.com/tutorial/r-squared)
+67. DataCamp [Internet]. R-squared explained: measuring model fit. [cited 2026 Apr 28]. Available from: [https://www.datacamp.com/tutorial/r-squared](https://www.datacamp.com/tutorial/r-squared)
 
-68. MathWorks [Internet]. Natick (MA): MathWorks. Assess model performance in Regression Learner. [cited 2026 Apr 28]. Available from: [https://www.mathworks.com/help/stats/assess-model-performance-in-regression-learner.html](https://www.mathworks.com/help/stats/assess-model-performance-in-regression-learner.html)
+68. MathWorks [Internet]. Visualize and assess model performance in Regression Learner. [cited 2026 Apr 28]. Available from: [https://www.mathworks.com/help/stats/assess-model-performance-in-regression-learner.html](https://www.mathworks.com/help/stats/assess-model-performance-in-regression-learner.html)
 
-69. ScienceDirect [Internet]. Amsterdam: Elsevier. Article S0304380008002305. [cited 2026 Apr 28]. Available from: [https://www.sciencedirect.com/science/article/abs/pii/S0304380008002305](https://www.sciencedirect.com/science/article/abs/pii/S0304380008002305)
+69. Piñeiro G, Perelman S, Guerschman JP, Paruelo JM. How to evaluate models: observed vs. predicted or predicted vs. observed? Ecol Modell [Internet]. 2008 Sep 10 [cited 2026 Apr 28];216(3-4):316-22. Available from: [https://www.sciencedirect.com/science/article/abs/pii/S0304380008002305](https://www.sciencedirect.com/science/article/abs/pii/S0304380008002305)
